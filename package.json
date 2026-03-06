@@ -1,0 +1,46 @@
+{
+  "name": "square-poc",
+  "version": "1.0.0",
+  "description": "TypeScript proof-of-concept demonstrating Square Payments API integration",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "demo:payments": "ts-node src/demos/payments-demo.ts",
+    "demo:locations": "ts-node src/demos/locations-demo.ts",
+    "demo:customers": "ts-node src/demos/customers-demo.ts",
+    "demo:refunds": "ts-node src/demos/refunds-demo.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teragoatz/square-poc.git"
+  },
+  "keywords": [
+    "square",
+    "payments",
+    "api",
+    "typescript",
+    "poc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/teragoatz/square-poc/issues"
+  },
+  "homepage": "https://github.com/teragoatz/square-poc#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "square": "^44.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.5",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
